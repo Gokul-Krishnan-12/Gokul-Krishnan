@@ -26,7 +26,7 @@ export default function Character({paragraph}) {
         return <Word key={i} progress={scrollYProgress} range={[start, end]}>{word}</Word>
       })
     }
-     <span className="absolute block bottom-0 lef-5 xl:lef-0 transform text-white text-opacity-50 font-bold text-xl md:text-2xl lg:text-3xl">
+     <span className="absolute block bottom-0 left-5 xl:left-5 transform text-white text-opacity-50 font-bold text-xl md:text-2xl lg:text-3xl">
       &lt;/p&gt;
     </span>
     </p>
