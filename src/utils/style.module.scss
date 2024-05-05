@@ -1,0 +1,61 @@
+.paragraph{
+    display: flex;
+    font-size: 35px;
+    line-height: 1;
+    padding: 40px;
+    flex-wrap: wrap;
+    position: relative;
+    max-width: 83%;
+    text-align: center;
+    font-weight: 900;
+    .word{
+      position: relative;
+      margin-right: 12px;
+      margin-top: 12px;
+      .shadow{
+        position: absolute;
+        opacity: 20%;
+      }
+      &--mask{
+        position: absolute;
+        display: none;
+        // background: #ec4339;
+        color: black;
+      
+      }
+    }
+    @media only screen and (min-width: 1000px) {
+      font-size: 100px;
+      line-height: 100%;
+      max-width: 80%;
+    }
+    
+    &--words{
+      text-align: left;
+      text-transform: uppercase;
+      padding: 10px;
+      margin-left: 10%;
+      max-width: 100%;
+      @media only screen and (min-width: 1000px) {
+        font-size: 110px;
+      }
+    }
+  } 
+
+  .border{
+    position: relative;
+    border-top: 1px solid hsla(37, 18%, 66%, .15);
+
+  }
+
+  .wordDescription{
+    position: absolute;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 100%;
+    text-transform: none;
+    top:0;
+    right: 0;
+    max-width: 40%;
+    color: black;
+  }
