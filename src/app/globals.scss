@@ -155,5 +155,112 @@
 
   }
 
+  .opinionSection{
+    position: relative;
+    padding: 30px 0 30px 50px;
+    border-top: 1px solid hsla(37, 18%, 66%, .15);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    @media only screen and (min-width: 1000px) {
+      padding: 300px 0 300px 100px;
+    }
+  }
+  .opinionText{
+    flex-basis: 90%;
+    .testimonial{
+      position: relative;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 100%;
+      margin-bottom: 30px;
+
+      @media only screen and (min-width: 1000px) {
+        font-size: 5rem;
+        max-width: 80%;
+      }
+      
+    &::before{
+      content: '';
+      background: url('/icons8-quote-left-30.png');
+      font-size: 110px;
+      position: absolute;
+      top:0;
+      left: -15%;
+      width:30px;
+      height: 30px;
+      @media only screen and (min-width: 900px) {
+        background: url('/icons8-quote-left-60.png');
+        width:60px;
+        height: 60px;
+        left: -8%;
+      }
+    }
+    }
+
+    h4{
+      font-family: Nunito Sans, sans-serif;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 130%;
+    }
+    .subContent{
+      color: hsla(37, 18%, 66%, .5);
+      font-weight: 500;
+      margin-bottom: 0;
+      font-size: 1.2rem;
+    }
+  }
+
+  .stickySection{
+    position: sticky;
+    top: 0;
+    padding: 18vh 0 7vh;
+    right: 0;
+    font-size: 20px;
+    flex-basis: 30%;
+    @media only screen and (min-width: 767px) {
+      flex-basis: 16%;
+    }
+    
+  }
+
+  .testimonialImage{
+    position: relative;
+    width: 12vw;
+    height: 10vh;
+    margin-bottom:40%;
+    @media only screen and (min-width: 1200px) {
+      width: 5vw;
+    }
+
+    .arrow{
+     
+    &::after{
+      display: none;
+      content: "";
+      position: absolute;
+      top: 35%;
+      left: -20%; /* Adjust this value based on your needs */
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-right: 10px solid #ec4339;
+      @media only screen and (min-width: 1000px) {
+        display: block;
+      }
+  }}
+
+}
+  .tesimonialSection{
+    @media only screen and (min-width: 1000px) {
+      padding: 0 20%;
+    }
+  }
+  
+
+
   @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');

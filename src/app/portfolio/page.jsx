@@ -41,7 +41,6 @@ const Portfolio=()=>{
 
     const {scrollYProgress}=useScroll({target:ref});
     const x =useTransform(scrollYProgress,[0,1],["0%","-80%"]);
-    console.log(x);
     return(
         <motion.div
         className="h-full"

@@ -22,7 +22,7 @@ const Hero = () => {
 
         }}
 
-        transition={{ type: "tween", ease: "backOut", duration:0.5}}
+        transition={{ type: "tween", ease: "backOut", duration:0.4}}
 
       >
         <div>
