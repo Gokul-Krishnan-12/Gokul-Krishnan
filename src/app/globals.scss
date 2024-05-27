@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @mixin mobile {
     @media (max-width: 738px) {
       @content;
@@ -69,7 +71,7 @@
   
   .experienceContainer {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
     background-color: #0d0d0d;
@@ -86,12 +88,20 @@
     font-size: 6vw;
     text-align: center;
     font-weight: 700;
-    width: 70%;
     position: relative;
+    display: flex;
+    justify-content: center;
     z-index: 1;
     pointer-events: none;
     mix-blend-mode: difference;
     color: #b7ab98;
+    p{
+      max-width: 100% !important;
+      @media only screen and (min-width: 1200px) {
+        max-width:83% !important ;
+   
+       }
+    }
   }
   
   .grid .column{
@@ -103,6 +113,177 @@
     height: 5vw;
   }
   
+  .historyList{
+    display: flex;
+    font-size: 20px;
+    line-height: 1;
+  padding: 30px 20px 30px 8%;
+    position: relative;
+    text-align: center;
+    font-weight: 300;
+    .timeline{
+      position: relative;
+    }
+    .designation{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin-left: 20%;
+      align-items: flex-start;
+      span{
+        font-weight: 500;
+        font-size: 13px;
+        margin-top: 5px;
+        @media only screen and (min-width: 1000px) {
+          font-size: 30px;
+        margin-top: 0;
 
-  @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+        }
+      }
+    }
+
+    @media only screen and (min-width: 1000px) {
+      font-size: 60px;
+      line-height: 100%;
+      padding: 40px 40px 40px 8%;
+    }
+    
+  } 
+
+  .borderBottom{
+    position: relative;
+    border-bottom: 1px solid hsla(37, 18%, 66%, .15);
+    &:first-child{
+      border-top: 1px solid hsla(37, 18%, 66%, .15);
+    }
+
+  }
+
+  .opinionSection{
+    position: relative;
+    padding: 30px 0 30px 50px;
+    border-top: 1px solid hsla(37, 18%, 66%, .15);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    @media only screen and (min-width: 1000px) {
+      padding: 300px 0 300px 100px;
+    }
+  }
+  .opinionText{
+    flex-basis: 90%;
+    .testimonial{
+      position: relative;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 100%;
+      margin-bottom: 30px;
+      max-width: 95%;
+
+      @media only screen and (min-width: 1000px) {
+        font-size: 3rem;
+        max-width: 80%;
+      }
+      
+    &::before{
+      content: '';
+      background: url('/icons8-quote-left-30.png');
+      font-size: 110px;
+      position: absolute;
+      top:0;
+      left: -15%;
+      width:30px;
+      height: 30px;
+      @media only screen and (min-width: 900px) {
+        background: url('/icons8-quote-left-60.png');
+        width:60px;
+        height: 60px;
+        left: -8%;
+      }
+    }
+    }
+
+    h4{
+      font-family: Nunito Sans, sans-serif;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 130%;
+    }
+    .subContent{
+      color: hsla(37, 18%, 66%, .5);
+      font-weight: 500;
+      margin-bottom: 0;
+      font-size: 1.2rem;
+    }
+  }
+
+  .stickySection{
+    position: sticky;
+    top: 0;
+    padding: 18vh 0 7vh;
+    right: 0;
+    font-size: 20px;
+    flex-basis: 30%;
+    @media only screen and (min-width: 767px) {
+      flex-basis: 16%;
+    }
+    
+  }
+
+  .testimonialImage{
+    position: relative;
+    width: 12vw;
+    height: 10vh;
+    margin-bottom:40%;
+    @media only screen and (min-width: 1200px) {
+      width: 5vw;
+    }
+
+    .arrow{
+     
+    &::after{
+      display: none;
+      content: "";
+      position: absolute;
+      top: 35%;
+      left: -20%; /* Adjust this value based on your needs */
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-right: 10px solid #ec4339;
+      @media only screen and (min-width: 1000px) {
+        display: block;
+      }
+  }}
+
+}
+  .tesimonialSection{
+    @media only screen and (min-width: 1000px) {
+      padding: 0 20%;
+    }
+  }
+
+  .loaderWrapper{
+    position: relative;
+    z-index: 99;
+  }
+  .loaderWrapper >h2{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    z-index: 99;
+    transform: 'translate(-50%, -50%)';
+    font-size: 40px;
+    color: #0d0d0d ;
+  }
+
+  .p-l-8 {
+    padding-left: 8%;
+    
+}
+
+  
+
+

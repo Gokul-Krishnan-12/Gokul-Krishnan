@@ -2,15 +2,15 @@ import { useScroll, useTransform, motion } from 'framer-motion';
 import React, { useRef, useState } from 'react';
 import styles from './style.module.scss';
 
-export default function Words({paragraph}) {
+export default function Words({skills ,skillsDescription}) {
 
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
-    offset: ["start 0.9", "start 0.25"]
+    offset: ["start 0.9", "start 0.5"]
   })
 
-  const words = paragraph.split(",");
+  const words = skills.split(",");
 
   const [isHovered, setIsHovered] = useState(false);
 
@@ -23,7 +23,8 @@ export default function Words({paragraph}) {
   };
   return (
     <>
-     <div className={styles.border} style={{ backgroundColor: isHovered ? '#eb5939' : 'transparent' }}>
+     <div className={styles.border}>
+
     <p 
       ref={container}         
       className={`${styles.paragraph} ${styles['paragraph--words']}`}   onMouseEnter={handleMouseEnter}
@@ -37,11 +38,12 @@ export default function Words({paragraph}) {
       })
     }
      {
-      words.map( (word, i) => {
+      words.map( (word
+      ) => {
        
         return <>
         <span className={`${styles.word} ${styles['word--mask']}`} style={{ display: isHovered ? 'block' : 'none' }}>{word}</span>
-        <span className={`${styles.wordDescription} isDesktop`} style={{ display: isHovered ? 'block' : 'none' }}>I craft custom websites that reflect your brand and prioritize scalability, performance, and accessibility, with engaging animations for a memorable user experience.</span>
+        <span className={`${styles.wordDescription} isDesktop`} style={{ display: isHovered ? 'flex' : 'none' }}>{skillsDescription}</span>
         </>
       })
     }

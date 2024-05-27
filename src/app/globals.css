@@ -18,6 +18,10 @@
   color: #f13024;
 }
 
+.min-h-70vh{
+  min-height: 70vh;
+}
+
 body{
   font-family: 'Raleway';
   color: '#b7ab98';
@@ -52,4 +56,13 @@ body{
   .textarea {
     @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
   }
+}
+/* Hide scrollbar for all elements */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+*::-webkit-scrollbar { /* Webkit browsers */
+  display: none;
 }

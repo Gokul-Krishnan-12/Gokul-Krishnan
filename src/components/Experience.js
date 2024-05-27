@@ -2,6 +2,7 @@
 import Character from "@/utils/Character";
 import SectionHeading from "./SectionHeading";
 import { useEffect, useState } from "react";
+import History from "./History";
 const Experience = () => {
  const [windowsWidth, setWindowsWidth] = useState(0);
 
@@ -25,7 +26,7 @@ const Experience = () => {
  }
  const paragraph="With over two years of diverse web application experience and collaborations with top talent in the field.";
  
-  return (
+  return (<>
     <div className="experienceContainer">
     <div className="experienceBody">
     <Character className="nameText--aboutText" paragraph={paragraph} />
@@ -43,6 +44,9 @@ const Experience = () => {
     </div>
     
   </div>
+  <SectionHeading heading="History"/>
+  <History/>
+  </>
   )
 };
 

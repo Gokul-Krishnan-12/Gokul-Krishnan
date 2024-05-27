@@ -24,7 +24,7 @@ module.exports = {
       colors: {
         primary: '#b7ab98;',
         secondary: '#393A47',
-        accent: '#eb5939;',
+        accent: '#eb5339;',
         background:'#0d0d0d;',
         black:'#070000',
       },
@@ -40,6 +40,9 @@ module.exports = {
       fontFamily: {
         poppins: [`var(--font-poppins)`, 'sans-serif'],
         sora: [`var(--font-sora)`, 'sans-serif'],
+      },
+      inset: {
+        '6p': '6%',
       },
     },
   },
