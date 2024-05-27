@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @mixin mobile {
     @media (max-width: 738px) {
       @content;
@@ -115,13 +117,12 @@
     display: flex;
     font-size: 20px;
     line-height: 1;
-  padding: 10px;
+  padding: 30px 20px 30px 8%;
     position: relative;
     text-align: center;
     font-weight: 300;
     .timeline{
       position: relative;
-      margin-left: 10%;
     }
     .designation{
       position: relative;
@@ -144,7 +145,7 @@
     @media only screen and (min-width: 1000px) {
       font-size: 60px;
       line-height: 100%;
-      padding: 40px;
+      padding: 40px 40px 40px 8%;
     }
     
   } 
@@ -152,6 +153,9 @@
   .borderBottom{
     position: relative;
     border-bottom: 1px solid hsla(37, 18%, 66%, .15);
+    &:first-child{
+      border-top: 1px solid hsla(37, 18%, 66%, .15);
+    }
 
   }
 
@@ -171,12 +175,13 @@
     .testimonial{
       position: relative;
       font-size: 2rem;
-      font-weight: 700;
+      font-weight: 500;
       line-height: 100%;
       margin-bottom: 30px;
+      max-width: 95%;
 
       @media only screen and (min-width: 1000px) {
-        font-size: 5rem;
+        font-size: 3rem;
         max-width: 80%;
       }
       
@@ -259,8 +264,26 @@
       padding: 0 20%;
     }
   }
+
+  .loaderWrapper{
+    position: relative;
+    z-index: 99;
+  }
+  .loaderWrapper >h2{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    z-index: 99;
+    transform: 'translate(-50%, -50%)';
+    font-size: 40px;
+    color: #0d0d0d ;
+  }
+
+  .p-l-8 {
+    padding-left: 8%;
+    
+}
+
   
 
 
-  @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');

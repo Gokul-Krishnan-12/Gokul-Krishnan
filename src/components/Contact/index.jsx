@@ -4,6 +4,7 @@ import Rounded from '@/components/RoundedButton';
 import { useRef } from 'react';
 import { useScroll, motion, useTransform, useSpring } from 'framer-motion';
 import Magnetic from '@/components/Magnetic';
+import Scene from '../Scene';
 
 export default function index() {
     const container = useRef(null);
@@ -27,12 +28,20 @@ export default function index() {
                         </Rounded>
                     </motion.div>
                 </div>
-                <div className={styles.nav}>
-                       
-                            <p>info@dennissnellenberg.com</p>
-                       
-                            <p>+31 6 27 84 74 30</p>
-                       
+                <div className={styles.nav}>                         
+                       <div className={styles.form}>u</div>
+                       <div className={styles.enquiry}>
+                            <div class={styles.contactOption}>
+                            <div className="absolute items-start">
+                                <h3>FURTHER ENQUIRIES OR COLLABORATION</h3>
+                                <h2>SCRATCH THIS</h2>
+                                <div class="contact__link"><a href="mailto:gokulkrish80@gmail.com">gokulkrish80@gmail.com</a></div>
+                                <div class="contact__link"><a href="https://api.whatsapp.com/send?phone=+919497294324">+91-9497294324</a></div>
+                                </div>
+                                {/* <Scene/> */}
+                               
+                            </div>
+                        </div>
                 </div>
                 <div className={styles.info}>
                     <div>

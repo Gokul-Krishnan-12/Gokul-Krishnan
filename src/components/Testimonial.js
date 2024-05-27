@@ -3,8 +3,26 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Opinion from "./Opinion";
+import SectionHeading from "./SectionHeading";
 
 const Testimonial = () => {
+
+  const opinions = [
+    {
+      testimonial: "During his tenure at Revertech, Gokul Krishnan demonstrated exceptional dedication and initiative, consistently delivering high-quality work with a positive attitude. His contributions greatly enriched our marketing efforts, and I wholeheartedly endorse Gokul for his future endeavors.",
+      author: "Midhun",
+      position: "Director",
+      company: "ReverTech"
+    },
+    {
+      testimonial: "Gokul's innovative approach and commitment to excellence have made a significant impact on our projects. He is a reliable and talented professional who always goes above and beyond.",
+      author: "Jane Doe",
+      position: "Project Manager",
+      company: "Tech Solutions"
+    }
+    // Add more opinions as needed
+  ];
+
   const [opinionVisibility, setOpinionVisibility] = useState([true, false, false]);
   const testimonialRef = useRef(null);
 
@@ -34,12 +52,19 @@ const Testimonial = () => {
     };
   }, [opinionVisibility]);
 
-  return (
+  return (<>
+         <SectionHeading heading="What they said"/>
     <div ref={testimonialRef} className='bg-background min-h-screen relative flex items-start justify-center testimonialSection'>
        <div>
-        <Opinion />
-        <Opinion />
-        <Opinion />
+         {opinions.map((opinion, index) => (
+          <Opinion
+            key={index}
+            testimonial={opinion.testimonial}
+            author={opinion.author}
+            position={opinion.position}
+            company={opinion.company}
+         />
+      ))}
        </div>
        <div className="stickySection">
         <motion.div
@@ -83,6 +108,7 @@ const Testimonial = () => {
         </motion.div>
        </div>
     </div>
+    </>
   );
 };
 

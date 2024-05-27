@@ -1,13 +1,13 @@
 
-const Opinion = () => {
+const Opinion = ({ testimonial, author, position, company }) => {
 
   return (
     <div className='opinionSection min-h-70vh'>
       <div className="opinionText">
-       <p className="testimonial">Neo is the best and he never complssints</p>
-       <h4>Mrk X</h4>
-       <p className="subContent">Director</p>
-       <p className="subContent">WRG</p>
+       <p className="testimonial">{testimonial}</p>
+       <h4>{author}</h4>
+       <p className="subContent">{position}</p>
+       <p className="subContent">{company}</p>
        
        </div>
       
