@@ -34,6 +34,7 @@ export default function index() {
     }
 
     const getBlocks = (indexOfColum) => {
+        if (typeof window === 'undefined') return [];
         const { innerWidth, innerHeight } = window;
         const blockSize = innerHeight * 0.1;
         const nbOfBlocks = Math.ceil(innerWidth / blockSize);
