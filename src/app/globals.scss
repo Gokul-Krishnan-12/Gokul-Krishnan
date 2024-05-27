@@ -161,7 +161,7 @@
 
   .opinionSection{
     position: relative;
-    padding: 30px 0 30px 50px;
+    padding: 30px 0 30px 8%;
     border-top: 1px solid hsla(37, 18%, 66%, .15);
     display: flex;
     justify-content: right;
@@ -174,7 +174,7 @@
     flex-basis: 90%;
     .testimonial{
       position: relative;
-      font-size: 2rem;
+      font-size: 0.9rem;
       font-weight: 500;
       line-height: 100%;
       margin-bottom: 30px;
@@ -205,16 +205,22 @@
 
     h4{
       font-family: Nunito Sans, sans-serif;
-      font-size: 1.5rem;
+      font-size: 1rem;
       font-style: normal;
       font-weight: 700;
       line-height: 130%;
+      @media only screen and (min-width: 1000px) {
+        font-size: 1.7rem;
+      }
     }
     .subContent{
       color: hsla(37, 18%, 66%, .5);
       font-weight: 500;
       margin-bottom: 0;
-      font-size: 1.2rem;
+      font-size: 0.8rem;
+      @media only screen and (min-width: 1000px) {
+        font-size: 1.4rem;
+      }
     }
   }
 
