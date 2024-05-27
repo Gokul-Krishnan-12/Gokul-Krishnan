@@ -38,7 +38,7 @@ export default function Words({skills ,skillsDescription}) {
       })
     }
      {
-      words.map( (word
+      words.map( (word ,i
       ) => {
        
         return <>

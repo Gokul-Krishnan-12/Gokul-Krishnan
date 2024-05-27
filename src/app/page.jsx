@@ -75,9 +75,9 @@ const Home = () => {
  <Hero />
   <AboutBanner/>
 <WhatIDo/>
-<Experience/> 
+ <Experience/> 
 <Testimonial/>
-<Contact/> 
+<Contact/>  
 </>
 
   );
