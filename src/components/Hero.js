@@ -1,5 +1,5 @@
 'use client';
-import { fadeIn, fadeInOpacity, opacityIn } from "./variants";
+import { fadeInOpacity} from "./variants";
 import {motion } from 'framer-motion';
 
 
