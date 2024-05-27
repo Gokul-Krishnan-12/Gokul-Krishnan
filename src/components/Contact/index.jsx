@@ -21,7 +21,7 @@ export default function Contact() {
                     
                     <h2>Dreams to <span className='text-accent'>reality</span>? </h2>
                     
-                    <h2>Let's talk!</h2>
+                    <h2>Let&apos;s talk!</h2>
                     <motion.div style={{x}} className={styles.buttonContainer}>
                         <Rounded  className={styles.button}>
                             <p>Get in touch</p>
