@@ -5,12 +5,12 @@
   font-style: normal; 
 }
 
-@font-face { 
-  font-family: "Raleway"; 
-  src: url('../../fonts/Raleway-ThinItalic.ttf'); 
-  font-weight: 100; 
-  font-style: italic; 
-}
+// @font-face { 
+//   font-family: "Raleway"; 
+//   src: url('../../fonts/Raleway-ThinItalic.ttf'); 
+//   font-weight: 100; 
+//   font-style: italic; 
+// }
 
 @font-face { 
   font-family: "Raleway"; 
@@ -19,12 +19,12 @@
   font-style: normal; 
 }
 
-@font-face { 
-  font-family: "Raleway"; 
-  src: url('../../fonts/Raleway-ExtraLightItalic.ttf'); 
-  font-weight: 200; 
-  font-style: italic; 
-}
+// @font-face { 
+//   font-family: "Raleway"; 
+//   src: url('../../fonts/Raleway-ExtraLightItalic.ttf'); 
+//   font-weight: 200; 
+//   font-style: italic; 
+// }
 
 @font-face { 
   font-family: "Raleway"; 
@@ -35,24 +35,11 @@
 
 @font-face { 
   font-family: "Raleway"; 
-  src: url('../../fonts/Raleway-LightItalic.ttf'); 
-  font-weight: 300; 
-  font-style: italic; 
-}
-
-@font-face { 
-  font-family: "Raleway"; 
   src: url('../../fonts/Raleway-Regular.ttf'); 
   font-weight: 400; 
   font-style: normal; 
 }
 
-@font-face { 
-  font-family: "Raleway"; 
-  src: url('../../fonts/Raleway-Italic.ttf'); 
-  font-weight: 400; 
-  font-style: italic; 
-}
 
 @font-face { 
   font-family: "Raleway"; 
@@ -61,12 +48,6 @@
   font-style: normal; 
 }
 
-@font-face { 
-  font-family: "Raleway"; 
-  src: url('../../fonts/Raleway-MediumItalic.ttf'); 
-  font-weight: 500; 
-  font-style: italic; 
-}
 
 @font-face { 
   font-family: "Raleway"; 
@@ -77,24 +58,11 @@
 
 @font-face { 
   font-family: "Raleway"; 
-  src: url('../../fonts/Raleway-SemiBoldItalic.ttf'); 
-  font-weight: 600; 
-  font-style: italic; 
-}
-
-@font-face { 
-  font-family: "Raleway"; 
   src: url('../../fonts/Raleway-Bold.ttf'); 
   font-weight: 700; 
   font-style: normal; 
 }
 
-@font-face { 
-  font-family: "Raleway"; 
-  src: url('../../fonts/Raleway-BoldItalic.ttf'); 
-  font-weight: 700; 
-  font-style: italic; 
-}
 
 @font-face { 
   font-family: "Raleway"; 
@@ -103,12 +71,6 @@
   font-style: normal; 
 }
 
-@font-face { 
-  font-family: "Raleway"; 
-  src: url('../../fonts/Raleway-ExtraBoldItalic.ttf'); 
-  font-weight: 800; 
-  font-style: italic; 
-}
 
 @font-face { 
   font-family: "Raleway"; 
@@ -117,12 +79,6 @@
   font-style: normal; 
 }
 
-@font-face { 
-  font-family: "Raleway"; 
-  src: url('../../fonts/Raleway-BlackItalic.ttf'); 
-  font-weight: 900; 
-  font-style: italic; 
-}
 
 @mixin mobile {
     @media (max-width: 738px) {
