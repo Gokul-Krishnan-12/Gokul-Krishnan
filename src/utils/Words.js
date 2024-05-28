@@ -41,10 +41,10 @@ export default function Words({skills ,skillsDescription}) {
       words.map( (word ,i
       ) => {
        
-        return <>
+        return <React.Fragment key={i}>
         <span className={`${styles.word} ${styles['word--mask']}`} style={{ display: isHovered ? 'block' : 'none' }}>{word}</span>
-        <span className={`${styles.wordDescription} isDesktop`} style={{ display: isHovered ? 'flex' : 'none' }}>{skillsDescription}</span>
-        </>
+        <span className={`${styles.wordDescription}`} style={{ display: isHovered ? 'flex' : 'none' }}>{skillsDescription}</span>
+        </React.Fragment>
       })
     }
     </p>

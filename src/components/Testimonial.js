@@ -19,8 +19,14 @@ const Testimonial = () => {
       author: "Jane Doe",
       position: "Project Manager",
       company: "Tech Solutions"
-    }
-    // Add more opinions as needed
+    },
+
+    {
+      testimonial: "As my student, I was amazed to see Gokul’s commendable technical, intellectual and analytic strengths. His attitude, initiatives, dedication and endurance shows his ambitiousness. I can vouch for his ability to think creatively and to explore.",
+      author: "Shinoj Sukumaran",
+      position: "Staff Advisor",
+      company: "RIT"
+    }    // Add more opinions as needed
   ];
 
   const [opinionVisibility, setOpinionVisibility] = useState([true, false, false]);
@@ -34,7 +40,7 @@ const Testimonial = () => {
       let visibleIndex = -1;
       opinions.forEach((opinion, index) => {
         const rect = opinion.getBoundingClientRect();
-        if (rect.top + 200 >= 0 && rect.bottom - 200 <= window.innerHeight) {
+        if (rect.top >= -100 && rect.bottom  <= window.innerHeight +100) {
           visibleIndex = index;
         }
       });
@@ -54,7 +60,7 @@ const Testimonial = () => {
 
   return (<>
          <SectionHeading heading="What they said"/>
-    <div ref={testimonialRef} className='bg-background min-h-screen relative flex items-start justify-center testimonialSection'>
+    <div ref={testimonialRef} className='bg-background min-h-screen relative flex items-start justify-center testimonialSection rounded-t-3xl rounded-b-3xl'>
        <div>
          {opinions.map((opinion, index) => (
           <Opinion
@@ -99,7 +105,7 @@ const Testimonial = () => {
           transition={{ duration: 2 }}
         >
           <Image
-            src="/peter-smart.jpg"
+            src="/shinoj.png"
             width={90}
             height={90}
             alt=""

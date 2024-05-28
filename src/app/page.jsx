@@ -37,7 +37,7 @@ const Home = () => {
   }, []);
 
   return (<>
-     <AnimatePresence mode='wait'>
+     {/* <AnimatePresence mode='wait'>
             {isLoading && 
              (
                 <motion.div 
@@ -69,7 +69,7 @@ const Home = () => {
                 </motion.div>
                     ) 
                    } 
- </AnimatePresence> 
+ </AnimatePresence>  */}
             
        
  <Hero />

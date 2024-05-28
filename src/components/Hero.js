@@ -6,7 +6,7 @@ import {motion } from 'framer-motion';
 const Hero = () => {
 
   return (
-    <div className='bg-primary/60 h-screen flex items-center justify-center relative'>
+    <div className='bg-backgroundbkLight h-screen flex items-center justify-center relative'>
     
         <div className="flex flex-col justify-center items-center w-full h-full">
         <div>
