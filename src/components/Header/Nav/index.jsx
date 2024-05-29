@@ -2,6 +2,7 @@ import styles from './style.module.scss';
 import { motion } from 'framer-motion';
 import { links } from './data';
 import { perspective } from "./anim";
+import Link from 'next/link';
 
 export default function index() {
   return (
@@ -13,16 +14,16 @@ export default function index() {
                 return (
                     <div key={`b_${i}`} className={styles.linkContainer}>
                         <motion.div
-                          href={href}
                           custom={i}
+                
                           variants={perspective}
                           initial="initial"
                           animate="enter"
                           exit="exit"
                         >
-                            <a>
+                            <Link href={href}>
                                 {title}
-                            </a>
+                            </Link>
                         </motion.div>
                     </div>
                 )

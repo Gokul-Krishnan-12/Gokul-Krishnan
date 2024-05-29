@@ -1,14 +1,16 @@
 .nav{
     flex-direction: column;
     justify-content: space-between;
-    padding: 100px 40px 50px 40px;
+    padding: 100px 40px 50px 0px;
     height: 100%;
     box-sizing: border-box;
     .body{
         display: flex;
         gap: 10px;
         flex-direction: column;
+       
         .linkContainer{
+            overflow: hidden;
             perspective: 120px;
             perspective-origin: bottom;
         }
@@ -16,6 +18,7 @@
             text-decoration: none;
             color: black;
             font-size: 30px;
+            margin-left: 40px;
         }
     }
     .footer{

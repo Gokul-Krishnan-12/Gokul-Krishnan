@@ -60,8 +60,8 @@ const Testimonial = () => {
     };
   }, [opinionVisibility]);
 
-  return (<>
-         <SectionHeading heading="What they said"/>
+  return (<div id="testimonials">
+         <SectionHeading heading="What they said" />
     <div ref={testimonialRef} className='bg-background min-h-screen relative flex items-start justify-center testimonialSection rounded-t-3xl rounded-b-3xl'>
        <div>
          {opinions.map((opinion, index) => (
@@ -116,7 +116,7 @@ const Testimonial = () => {
         </motion.div>
        </div>
     </div>
-    </>
+    </div>
   );
 };
 
