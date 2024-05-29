@@ -14,7 +14,7 @@ export const metadata = {
     title: "Portfolio of Gokul Krishnan",
     type: "website",
     url: "https://gokul-krishnan.vercel.app",
-    image: "https://gokul-krishnan.vercel.app/hero.png",
+    images: "https://gokul-krishnan.vercel.app/hero.png",
     description: "Portfolio website of Gokul Krishnan.",
     locale: "en_US",
   },
