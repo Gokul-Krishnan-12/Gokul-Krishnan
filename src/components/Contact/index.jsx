@@ -15,15 +15,6 @@ export default function Contact() {
         offset: ["start end", "end end"]
     })
     const [showForm,setShowForm]=useState(true);
-    const [toSend, setToSend] = useState({
-      from_name: '',
-      to_name: '',
-      message: '',
-      reply_to: '',
-    });
-    const handleChange = (e) => {
-      setToSend({ ...toSend, [e.target.name]: e.target.value });
-    };
 
     const { register, handleSubmit, formState: { errors }, watch } = useForm();
 
@@ -39,10 +30,12 @@ export default function Contact() {
               process.env.NEXT_PUBLIC_EMAIL_USER_ID
           )
           .then((response) => {
-              console.log('SUCCESS!', response.status, response.text);
+            if(response.status===200 && response.text=="OK") {
+              setShowForm(false);
+            }
           })
           .catch((err) => {
-              console.log('FAILED...', err);
+            setShowForm(true);
           });
          
   };
@@ -76,7 +69,6 @@ export default function Contact() {
                                 name='from_name'
                                 className=" w-full xl:w-4/6 peer m-0 block h-[58px] rounded border border-solid border-secondary-500 bg-transparent px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder-transparent focus:border-primary focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-white focus:outline-none dark:border-neutral-400 dark:text-white dark:focus:border-primary"
                                 id="floatingInput"
-                                onChange={handleChange}
                                
                                 {...register('from_name', { required: 'Name is required' })}
                               />
@@ -98,7 +90,6 @@ export default function Contact() {
                                 className=" w-full xl:w-4/6 peer m-0 block h-[58px] rounded border border-solid border-secondary-500 bg-transparent px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder-transparent focus:border-primary focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-white focus:outline-none dark:border-neutral-400 dark:text-white dark:focus:border-primary"
                                 id="floatingEmail"
                                 placeholder="name@example.com"  
-                                onChange={handleChange}                             
                                 {...register('from_email', { required: 'Email is required' })}
                                 />
                               <label
@@ -120,7 +111,6 @@ export default function Contact() {
                               className=" w-full xl:w-4/6 peer m-0 block h-[150px] rounded border border-solid border-secondary-500 bg-transparent px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder-transparent focus:border-primary focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-white focus:outline-none dark:border-neutral-400 dark:text-white dark:focus:border-primary resize-none"
                               id="floatingMessage"
                               rows="6"
-                              onChange={handleChange}
                               {...register('message', { required: 'Message is required' })}
                             />
                             <label
@@ -146,10 +136,26 @@ export default function Contact() {
                       </button>
                      
                     </>
-                      :<h2>Hello</h2>
+                      :
+                      <>              
+                        <div className='relative min-h-[400px] flex items-center justify-center border-solid border-2 border-primary py-4 px-4'>  <div class='hoverme absolute left-0'>
+                        {Array.from({ length: 50 }).map((_, i) => (
+                          <i key={i} />
+                        ))}
+                        
+                        </div>
+                        <span>You&apos;re awesome! Thanks for submitting the form.<br/> We&apos;ll be in contact soon.</span>
+                        <div class='hoverme absolute right-0'>
+                        {Array.from({ length: 50 }).map((_, i) => (
+                          <i key={i} />
+                        ))}
+                      </div>
+                      </div>
+                     </>
                     }
                      </form>
-                  
+     
+
           
         
       
