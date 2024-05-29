@@ -46,7 +46,7 @@ export default function Contact() {
     const fromEmailValue = watch('from_email', '');
     const fromMessageValue = watch('message', '');
     return (
-        <motion.div ref={container} className={styles.contact}>
+        <motion.div ref={container} className={styles.contact} id="contact">
             <div className={styles.body}>
                 <div className={styles.title}>
                     
@@ -167,7 +167,6 @@ export default function Contact() {
                                 <div className={styles.contact__link}><Link href="mailto:gokulkrish80@gmail.com">gokulkrish80@gmail.com</Link></div>
                                 <div className={styles.contact__link}><Link href="https://api.whatsapp.com/send?phone=+919497294324">+91-9497294324</Link></div>
                                 </div>
-                                {/* <Scene/> */}
                                
                             </div>
                         </div>

@@ -3,7 +3,7 @@ export const perspective = {
         opacity: 0,
         // rotateX: 90,
         // translateY: 80,
-        translateX: -50,
+        translateX: -250,
     },
     enter: (i) => ({
         opacity: 0.8,

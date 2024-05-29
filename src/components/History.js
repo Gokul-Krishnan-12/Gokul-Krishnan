@@ -2,7 +2,7 @@ const History = () => {
   
   return (
     
-    <div className='bg-black relative flex items-center justify-center rounded-t-3xl rounded-b-3xl'>
+    <div className='bg-black relative flex items-center justify-center rounded-t-3xl rounded-b-3xl' >
         <div className="relative flex flex-col  w-full h-full my-10">
         <div className="borderBottom" >
     <div          

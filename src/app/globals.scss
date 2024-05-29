@@ -239,10 +239,12 @@
   .opinionSection{
     position: relative;
     padding: 30px 0 30px 8%;
-    border-top: 1px solid hsla(37, 18%, 66%, .15);
     display: flex;
     justify-content: right;
     align-items: center;
+    &:not(:first-child){
+      border-top: 1px solid hsla(37, 18%, 66%, .15);
+    }
     @media only screen and (min-width: 1000px) {
       padding: 100px 0 100px 100px;
     }
@@ -251,14 +253,14 @@
     flex-basis: 90%;
     .testimonial{
       position: relative;
-      font-size: 0.9rem;
+      font-size: 16px;
       font-weight: 500;
       line-height: 100%;
       margin-bottom: 30px;
       max-width: 95%;
 
       @media only screen and (min-width: 1000px) {
-        font-size: 3rem;
+        font-size: 35px;
         max-width: 80%;
       }
       

@@ -27,7 +27,7 @@ const Experience = () => {
  const paragraph="With over two years of diverse web application experience and collaborations with top talent in the field.";
  
   return (<>
-    <div className="experienceContainer">
+    <div className="experienceContainer" id="history">
     <div className="experienceBody">
     <Character className="nameText--aboutText" paragraph={paragraph} />
     </div>
@@ -44,7 +44,7 @@ const Experience = () => {
     </div>
     
   </div>
-  <SectionHeading heading="History"/>
+  <SectionHeading heading="History" />
   <History/>
   </>
   )

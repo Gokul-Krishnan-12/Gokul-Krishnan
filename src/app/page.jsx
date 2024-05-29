@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState ,useRef } from 'react'
 import { AnimatePresence ,motion } from 'framer-motion';
 import Hero from '@/components/Hero';
 import AboutBanner from '@/components/AboutBanner';
@@ -14,6 +14,7 @@ import { slideUp, opacityIn,fadeInOpacity } from '@/components/variants';
 
 
 const Home = () => {
+  const contactRef=useRef(null);
   
   const [isLoading, setIsLoading] = useState(true);
   const [dimension, setDimension] = useState({width: 0, height:0});
@@ -21,20 +22,20 @@ const Home = () => {
   useEffect( () => {
       setDimension({width: window.innerWidth, height: window.innerHeight})
   }, []);
-  useEffect( () => {
-    (
-      async () => {
-          const LocomotiveScroll = (await import('locomotive-scroll')).default
-          const locomotiveScroll = new LocomotiveScroll();
+  // useEffect( () => {
+  //   (
+  //     async () => {
+  //         const LocomotiveScroll = (await import('locomotive-scroll')).default
+  //         const locomotiveScroll = new LocomotiveScroll();
 
-          setTimeout( () => {
-            setIsLoading(false);
-            document.body.style.cursor = 'default'
-            window.scrollTo(0,0);
-          }, 3000)
-      }
-    )()
-  }, []);
+  //         setTimeout( () => {
+  //           setIsLoading(false);
+  //           document.body.style.cursor = 'default'
+  //           window.scrollTo(0,0);
+  //         }, 3000)
+  //     }
+  //   )()
+  // }, []);
 
   return (<>
      {/* <AnimatePresence mode='wait'>
@@ -77,7 +78,7 @@ const Home = () => {
 <WhatIDo/>
  <Experience/> 
 <Testimonial/>
-<Contact/>  
+<Contact ref={contactRef} />  
 </>
 
   );

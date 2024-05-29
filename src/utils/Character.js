@@ -16,9 +16,6 @@ export default function Character({paragraph}) {
       ref={container}         
       className={styles.paragraph}
     >
-      <span className="absolute block top-0 left-6p transform  text-white text-opacity-50 font-bold text-xl md:text-2xl lg:text-3xl">
-      &lt;p&gt;
-    </span>
     {
       words.map( (word, i) => {
         const start = i / words.length
@@ -26,9 +23,6 @@ export default function Character({paragraph}) {
         return <Word key={i} progress={scrollYProgress} range={[start, end]}>{word}</Word>
       })
     }
-     <span className="absolute block [bottom:-6px] left-6p  transform text-white text-opacity-50 font-bold text-xl md:text-2xl lg:text-3xl">
-      &lt;/p&gt;
-    </span>
     </p>
   )
 }
