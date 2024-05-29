@@ -2,7 +2,7 @@
 import Character from "@/utils/Character";
 import SectionHeading from "./SectionHeading";
 const AboutBanner = () => {
- const paragraph="BEEN CODING SINCE 2020, AND THE SEARCH FOR THAT SNEAKY SEMICOLON CONTINUES!";
+ const paragraph="Been coding since 2020, and the search for that sneaky semicolon continues!";
   return (
     <div className='bg-black min-h-screen  relative  flex items-center justify-center rounded-t-3xl'>
         <div className="flex flex-col justify-center items-center w-full h-full my-20">
