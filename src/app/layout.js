@@ -1,3 +1,4 @@
+import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
 import "./globals.scss";
 import Layout from "@/components/Layout";
@@ -14,7 +15,7 @@ export const metadata = {
     title: "Portfolio of Gokul Krishnan",
     type: "website",
     url: "https://gokul-krishnan.vercel.app",
-    images: "https://gokul-krishnan.vercel.app/hero.png",
+    images: "https://gokul-krishnan.vercel.app/goku.png",
     description: "Portfolio website of Gokul Krishnan.",
     locale: "en_US",
   },
@@ -28,8 +29,22 @@ export default function RootLayout({ children }) {
       <body className="bg-backgroundbkLight">
         <Layout>
   
-      
+        <SmoothScroll options={{
+          duration:1,
+          direction:'vertical',
+          gestureDirection:'vertical',
+          smoothWheel:true,
+          smoothTouch:true,
+          touchMultiplier:2,
+          inifinite:false,
+          easing:async(t)=>{
+            'use server';
+            Math.min(2,2.001 - Math.pow(2,-20*t));
+          },
+        }}>
       {children}
+      </SmoothScroll >
+
       
       </Layout>
       </body>

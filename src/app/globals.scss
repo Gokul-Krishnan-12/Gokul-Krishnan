@@ -197,7 +197,7 @@
     padding: 30px 20px 30px 8%;
     position: relative;
     text-align: center;
-    font-weight: 400;
+    font-weight: 700;
     .timeline{
       position: relative;
     }
@@ -276,8 +276,7 @@
       @media only screen and (min-width: 900px) {
         background: url('/icons8-quote-left-60.png');
         width:60px;
-        height: 60px;
-        left: -8%;
+        height: 60px;   
       }
     }
     }
@@ -326,9 +325,6 @@
     margin-bottom:40%;
     img{
       border-radius: 100%;
-    }
-    @media only screen and (min-width: 1200px) {
-      width: 5vw;
     }
 
     .arrow{

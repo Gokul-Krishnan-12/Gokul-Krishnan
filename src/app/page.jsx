@@ -10,6 +10,7 @@ import Testimonial from '@/components/Testimonial';
 import Contact from '@/components/Contact';
 import VerticalPixelTransition from '@/components/verticalPixelTransition';
 import { slideUp, opacityIn,fadeInOpacity } from '@/components/variants';
+import AboutMore from '@/components/AboutMore';
 
 
 
@@ -22,20 +23,8 @@ const Home = () => {
   useEffect( () => {
       setDimension({width: window.innerWidth, height: window.innerHeight})
   }, []);
-  // useEffect( () => {
-  //   (
-  //     async () => {
-  //         const LocomotiveScroll = (await import('locomotive-scroll')).default
-  //         const locomotiveScroll = new LocomotiveScroll();
+ 
 
-  //         setTimeout( () => {
-  //           setIsLoading(false);
-  //           document.body.style.cursor = 'default'
-  //           window.scrollTo(0,0);
-  //         }, 3000)
-  //     }
-  //   )()
-  // }, []);
 
   return (<>
      {/* <AnimatePresence mode='wait'>
@@ -75,6 +64,7 @@ const Home = () => {
        
  <Hero />
   <AboutBanner/>
+  <AboutMore/>
 <WhatIDo/>
  <Experience/> 
 <Testimonial/>

@@ -28,7 +28,7 @@ const WhatIDo = () => {
 
   return (
     
-    <div className='bg-black relative min-h-screen flex items-center justify-center rounded-b-3xl' id="expertise">
+    <div className='bg-black relative min-h-screen flex items-center justify-center rounded-b-3xl rounded-t-3xl' id="expertise">
         <div className="relative flex flex-col  w-full h-full my-20">
           <SectionHeading heading="What i do"/>
           <div className="relative">
