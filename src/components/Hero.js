@@ -23,7 +23,7 @@ const Hero = () => {
 }, [])
 
   return (
-    <div className='bg-backgroundbkLight h-screen flex items-center justify-center relative' ref={heroRef}>
+    <div className='bg-backgroundbkLight h-screen flex items-center justify-center sticky top-0' ref={heroRef}>
     
         <div className="flex flex-col justify-center items-center w-full h-full">
           <div>
