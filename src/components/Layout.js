@@ -1,6 +1,5 @@
 'use client';
 import { useEffect } from "react";
-import Nav from "./Nav";
 import Header from "@/components/Header";
 
 const Layout = ({children}) => {
@@ -18,7 +17,6 @@ const Layout = ({children}) => {
 
   return (<>
   <Header/>
-    <Nav />
     <div>
     {children}
   </div>
