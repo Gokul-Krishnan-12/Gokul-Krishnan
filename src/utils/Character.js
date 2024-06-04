@@ -2,7 +2,7 @@ import { useScroll, useTransform, motion } from 'framer-motion';
 import React, { useRef } from 'react';
 import styles from './style.module.scss';
 
-export default function Character({paragraph}) {
+export default function Character({paragraph,className=''}) {
 
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -14,7 +14,7 @@ export default function Character({paragraph}) {
   return (
     <p 
       ref={container}         
-      className={styles.paragraph}
+      className={`${styles.paragraph} ${className==''?styles['paragraph--small']:''}`}
     >
     {
       words.map( (word, i) => {

@@ -102,18 +102,20 @@
 
   .nameText{
     font-family:  "Raleway", sans-serif;
-    font-size: 60px;
-    font-weight: 800;
+    font-size: 50px;
+    font-weight: 500;
    line-height: 100%;
    cursor: pointer;
  
     @media only screen and (min-width: 1000px) {
         font-size: 90px;
+    font-weight: 800;
+
       }
 
       &--subText{
         font-size: 48px;
-        font-weight: 800;
+        font-weight: 500;
         font-family: 'Times New Roman', Times, serif;
         @media only screen and (min-width: 900px) {
           font-size: 60px;
@@ -369,6 +371,9 @@
   .p-l-8 {
     padding-left: 8%;
     
+}
+.max-w-50{
+  max-width: 50%;
 }
 
 .text-red-300{
