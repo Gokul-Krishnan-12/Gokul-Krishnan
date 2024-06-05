@@ -10,7 +10,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const menu = {
     open: {
-        width: "480px",
+        width: "400px",
         height: "500px",
         top: "-25px",
         right: "-25px",
@@ -29,6 +29,18 @@ export default function Index() {
     const [isActive, setIsActive] = useState(false);
     const pathname = usePathname();
     const button = useRef(null);
+    useEffect(()=>{
+        const handleClickOutside=(event)=>{
+            if(button.current && !button.current.contains(event.target)){
+                setIsActive(false);
+            }
+        };
+
+        document.addEventListener('mousedown',handleClickOutside);
+        return ()=>{
+            document.removeEventListener('mousedown',handleClickOutside);
+        };
+    },[]);
 
     useEffect( () => {
       if(isActive) setIsActive(false)

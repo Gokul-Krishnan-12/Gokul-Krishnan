@@ -21,8 +21,8 @@ const WhatIDo = () => {
       description: "I design stunning user interfaces and interactive experiences using Figma's versatile platform, ensuring seamless collaboration and pixel-perfect results."
     },
     {
-      skill: "Trading",
-      description: "I regularly monitor the stock market to stay informed and make informed investment decisions."
+      skill: "SEO",
+      description: "I specialize in optimizing websites for search engines, implementing strategic SEO techniques to enhance visibility and drive organic traffic, resulting in higher rankings and increased online presence."
     }
   ];
 

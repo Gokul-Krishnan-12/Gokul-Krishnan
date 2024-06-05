@@ -67,6 +67,11 @@ body{
   display: none;
 }
 
+body{
+  -webkit-tap-highlight-color: transparent; /* For older versions of Android */
+  tap-highlight-color: transparent; /* For newer versions of Android */
+}
+
 html.lenis, html.lenis body {
   height: auto;
 }
