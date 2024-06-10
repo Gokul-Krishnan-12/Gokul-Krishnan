@@ -41,7 +41,7 @@ const Hero = () => {
               variants={fadeInOpacity("up",0.2)}
                   initial='hidden'
                   animate='show'
-                  exit={'hidden'} >GOKUL <br/> KRISHNAN<span className='text-accent nameText--subText'>■</span>
+                  exit={'hidden'} >GOKUL <br/> KRISHNAN<span className='text-accent nameText--iconText'>■</span>
           </motion.h1>
           </div>
           </div>

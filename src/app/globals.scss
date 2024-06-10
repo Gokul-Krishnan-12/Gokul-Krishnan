@@ -122,6 +122,15 @@
 
         }
       }
+      &--iconText{
+        font-size: 30px;
+        font-weight: 500;
+        font-family: 'Times New Roman', Times, serif;
+        @media only screen and (min-width: 900px) {
+          font-size: 50px;
+
+        }
+      }
 
       span{
         width: auto;
@@ -368,9 +377,25 @@
     color: #0d0d0d ;
   }
 
-  .p-l-8 {
-    padding-left: 8%;
+  .p-l-r {
+    padding:10px 8%;
+    @media only screen and (min-width: 900px) {
+      padding:0 8%;
+
+    }
     
+}
+
+.p-l-8{
+  padding-left: 8%;
+
+}
+.displayImage{
+  width: 400px;
+  @media only screen and (min-width: 900px) {
+   width: 600px;
+
+  }
 }
 .max-w-50{
   max-width: 50%;
@@ -439,7 +464,10 @@
 
 .sliderContainer{
   position: absolute;
-  top: calc(100vh - 300px);
+ 
+  @media only screen and (min-width: 1000px) {
+    top: calc(100vh - 300px);
+  }
   
 }
 
@@ -452,10 +480,13 @@
   position: relative;
   margin: 0px;
   color: white;
-  font-size: 180px;
+  font-size: 80px;
   font-weight: 600;
   padding-right: 50px;
   opacity: 0.1 ;
+  @media only screen and (min-width: 1000px) {
+    font-size: 180px;
+  }
 }
 
 .slider p:nth-of-type(2){
