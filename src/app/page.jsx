@@ -46,14 +46,16 @@ const Home = () => {
         {isLoading && <Preloader />}
       </AnimatePresence>
             
-       
- <Hero />
-  <AboutBanner/>
-  <AboutMore/>
-<WhatIDo/>
- <Experience/> 
-<Testimonial/>
-<Contact ref={contactRef} />  
+      {!isLoading   && <>
+        <Hero />
+        <AboutBanner/>
+        <AboutMore/>
+        <WhatIDo/>
+        <Experience/> 
+        <Testimonial/>
+        <Contact ref={contactRef} />  
+        </>
+}
 </>
 
   );

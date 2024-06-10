@@ -29,7 +29,7 @@ const Hero = () => {
           <div>
         <div className="overflow-hidden">
           <motion.h2 className="nameText--subText"  
-              variants={fadeInOpacity('up',0.2)}
+              variants={fadeInOpacity('up',0.3)}
                   initial='hidden'
                   animate='show'
                   exit={'hidden'} >I<span className='text-accent nameText--subText'>’</span>am
@@ -38,7 +38,7 @@ const Hero = () => {
         <div className="overflow-hidden">
 
           <motion.h1 className="nameText"  
-              variants={fadeInOpacity("up",0.2)}
+              variants={fadeInOpacity("up",0.3)}
                   initial='hidden'
                   animate='show'
                   exit={'hidden'} >GOKUL <br/> KRISHNAN<span className='text-accent nameText--iconText'>■</span>
