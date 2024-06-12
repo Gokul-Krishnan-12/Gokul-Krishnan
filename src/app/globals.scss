@@ -101,15 +101,16 @@
   }
 
   .nameText{
+    z-index: 99;
     font-family:  "Raleway", sans-serif;
     font-size: 50px;
     font-weight: 500;
-   line-height: 100%;
-   cursor: pointer;
+    line-height: 100%;
+      color:rgb(183, 171, 152);
  
     @media only screen and (min-width: 1000px) {
         font-size: 90px;
-    font-weight: 800;
+        font-weight: 800;
 
       }
 
@@ -493,4 +494,26 @@
   position: absolute;
   left: 100%;
   top: 0;
+}
+
+.bgImg{
+  position: relative;
+  background-image: url('/IMG_9329.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 30% 30%;
+  filter: brightness(80%);
+  &::after{
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background: #242222;
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+  }
+}
+.afterBg{
+ position: relative;
 }

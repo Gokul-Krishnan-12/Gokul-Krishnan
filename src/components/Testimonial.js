@@ -8,13 +8,13 @@ import SectionHeading from "./SectionHeading";
 const Testimonial = () => {
 
   const opinions = [
-    {
-      testimonial: "Gokul's innovative approach and commitment to excellence have made a significant impact on our projects. He is a reliable and talented professional who always goes above and beyond.",
+    // {
+    //   testimonial: "Gokul's innovative approach and commitment to excellence have made a significant impact on our projects. He is a reliable and talented professional who always goes above and beyond.",
 
-      author: "Neo",
-      position: "Director",
-      company: "ReverTech"
-    },
+    //   author: "Neo",
+    //   position: "Director",
+    //   company: "ReverTech"
+    // },
     {
       testimonial: "During his tenure at Revertech, Gokul Krishnan demonstrated exceptional dedication and initiative, consistently delivering high-quality work with a positive attitude. His contributions greatly enriched our marketing efforts, and I wholeheartedly endorse Gokul for his future endeavors.",
 
@@ -75,7 +75,7 @@ const Testimonial = () => {
       ))}
        </div>
        <div className="stickySection">
-        <motion.div
+        {/* <motion.div
           className="testimonialImage"
           style={{ filter: opinionVisibility[0] ? "brightness(100%)" : "brightness(30%)" }}
           transition={{ duration: 2 }}
@@ -87,10 +87,10 @@ const Testimonial = () => {
             alt=""
           />
             {opinionVisibility[0] && <span className="arrow"/>}
-        </motion.div>
+        </motion.div> */}
         <motion.div
           className="testimonialImage"
-          style={{ filter: opinionVisibility[1] ? "brightness(100%)" : "brightness(30%)" }}
+          style={{ filter: opinionVisibility[0] ? "brightness(100%)" : "brightness(30%)" }}
           transition={{ duration: 2 }}
         >
           <Image
@@ -99,11 +99,11 @@ const Testimonial = () => {
             height={90}
             alt=""
           />
-               {opinionVisibility[1] && <span className="arrow"/>}
+               {opinionVisibility[0] && <span className="arrow"/>}
         </motion.div>
         <motion.div
           className="testimonialImage"
-          style={{ filter: opinionVisibility[2] ? "brightness(100%)" : "brightness(30%)" }}
+          style={{ filter: opinionVisibility[1] ? "brightness(100%)" : "brightness(30%)" }}
           transition={{ duration: 2 }}
         >
           <Image
@@ -112,7 +112,7 @@ const Testimonial = () => {
             height={90}
             alt=""
           />
-             {opinionVisibility[2] && <span className="arrow"/>}
+             {opinionVisibility[1] && <span className="arrow"/>}
         </motion.div>
        </div>
     </div>

@@ -19,7 +19,6 @@
       &--mask{
         position: absolute;
         display: none;
-        // background: #ec4339;
         color: black;
        
       
@@ -50,7 +49,7 @@
       z-index: 1;
       @media only screen and (min-width: 1000px) {
         font-size: 25px;
-        max-width: 50%;
+        max-width: 60%;
       }
     }
   } 

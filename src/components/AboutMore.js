@@ -1,4 +1,3 @@
-import Image from "next/image";
 import SectionHeading from "./SectionHeading";
 import { useLayoutEffect, useRef } from "react";
 import Character from "@/utils/Character";
@@ -45,7 +44,6 @@ const AboutMore = () => {
     <div className='bg-backgroundBkLight min-h-screen  relative   flex  justify-center rounded-t-3xl rounded-b-3xl ' id="about" ref={aboutRef}>
         <div className="overflow:hidden flex flex-col justify-center  w-full h-full my-20">
           <SectionHeading heading="More About Me"/>
-          <Image src="/goku_cropped.png" width={600} height={150} quality={100} className="xl:absolute xl:bottom-0 xl:right-0 opacity-30 xl:opacity-100 xl:brightness-50 displayImage"/>
           <div className="sliderContainer hidden xl:block">
             <div ref={slider} className="slider">
               <p ref={firstText}>Full Stack Developer -</p>

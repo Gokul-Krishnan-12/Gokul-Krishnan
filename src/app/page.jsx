@@ -9,14 +9,11 @@ import Experience from '@/components/Experience';
 import Testimonial from '@/components/Testimonial';
 import Contact from '@/components/Contact';
 import Preloader from '@/components/Preloader';
-import VerticalPixelTransition from '@/components/verticalPixelTransition';
-import { slideUp, opacityIn,fadeInOpacity } from '@/components/variants';
 import AboutMore from '@/components/AboutMore';
 
 
 
 const Home = () => {
-  const contactRef=useRef(null);
   
   const [isLoading, setIsLoading] = useState(true);
   const [dimension, setDimension] = useState({width: 0, height:0});
@@ -53,7 +50,7 @@ const Home = () => {
         <WhatIDo/>
         <Experience/> 
         <Testimonial/>
-        <Contact ref={contactRef} />  
+        <Contact />  
         </>
 }
 </>
