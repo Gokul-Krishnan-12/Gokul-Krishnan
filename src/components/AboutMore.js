@@ -41,7 +41,7 @@ const AboutMore = () => {
   }
 
   return (
-    <div className='bg-backgroundBkLight min-h-screen  relative   flex  justify-center rounded-t-3xl rounded-b-3xl ' id="about" ref={aboutRef}>
+    <div className='bg-backgroundbkLight min-h-screen  relative   flex  justify-center rounded-t-3xl rounded-b-3xl overflow-hidden' id="about" ref={aboutRef}>
         <div className="overflow:hidden flex flex-col justify-center  w-full h-full my-20">
           <SectionHeading heading="More About Me"/>
           <div className="sliderContainer hidden xl:block">
